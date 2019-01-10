@@ -4,7 +4,7 @@ const GEOCODE_ROOT_URL = 'https://maps.googleapis.com/maps/api/geocode/json?latl
 
 const buildGeocodeUrl = ({longitude, latitude}) => {
   // latitude goes first in query
-  return `${GEOCODE_ROOT_URL}${latitude},${longitude}`;
+  return `${GEOCODE_ROOT_URL}${latitude},${longitude}&key=AIzaSyBErLdf4XxPa74wrrdyJUyPvnlRxRa0fT4`;
 };
 
 const reverseGeocode = (region) => {
